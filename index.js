@@ -22,6 +22,6 @@ app.use('/api/proyectos',require('./routes/proyectos'));
 app.use('/api/tareas',require('./routes/tareas'));
 
 /* Iniciar el servidor */
-app.listen(port,()=>{
+app.listen(port,'0.0.0.0',()=>{
     console.log(`El servidor en el puerto ${port}`);    
 });
